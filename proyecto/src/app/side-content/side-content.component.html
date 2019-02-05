@@ -1,0 +1,21 @@
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let panel of config.panels">
+
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{ panel.name }}
+            </mat-panel-title>
+            <mat-panel-description>
+                {{ panel.description }}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <!--<p>Panel content goes here</p>-->
+        <app-widget-container
+            [selector]="panel.component.selector"
+            [settings]="panel.component.settings">
+        </app-widget-container>
+
+    </mat-expansion-panel>
+</mat-accordion>
+
+

@@ -19,7 +19,7 @@ import {
     MatIconModule,
     MatListModule, MatExpansionModule
 } from "@angular/material";
-import {DataTablComponent} from './data-tabl/data-tabl.component';
+
 import {MainNavComponent} from './main-nav/main-nav.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MainComponent} from './main/main.component';
@@ -32,7 +32,7 @@ import {NgMaterialMultilevelMenuModule} from "ng-material-multilevel-menu";
 @NgModule({
     declarations: [
         AppComponent,
-        DataTablComponent,
+
         MainNavComponent,
         MainComponent,
         SideContentComponent,

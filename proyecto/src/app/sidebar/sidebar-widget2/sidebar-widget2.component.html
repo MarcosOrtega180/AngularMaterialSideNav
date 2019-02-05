@@ -1,0 +1,37 @@
+<!--<div>-->
+<!--<ol>-->
+<!--<li *ngFor="let item of videoList">-->
+
+<!--<div>{{item.title}}</div>-->
+
+
+<!--<ol>-->
+<!--<li *ngFor="let subItem of item.nodes">-->
+<!--<div>{{subItem.title}}</div>-->
+<!--<ol>-->
+<!--<li *ngFor="let subItem2 of subItem.nodes2">{{subItem2.title}}</li>-->
+<!--</ol>-->
+<!--</li>-->
+<!--</ol>-->
+<!--</li>-->
+<!--</ol>-->
+<!--</div>-->
+
+
+<div>
+    <ol>
+        <li *ngFor="let item of videoList">
+            <div>{{item.title}}</div>
+            <ol>
+                <li *ngFor="let subItem of item.nodes">
+                    <div>{{subItem.title}}</div>
+                    <ol>
+                        <li *ngFor="let subItem2 of subItem.nodes2">{{subItem2.title}}</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+</div>
+
+
